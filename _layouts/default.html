@@ -1,22 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <main class="container {% if site.color_scheme %}{{ site.color_scheme }}{% else %}avocado{% endif %}">
+      {% if page.title == "Home" %}
+      <header class="fadeInLeft animated">
+      {% else %}
+      <header>
+      {% endif %}
+        <div>
+          <a href="{{ site.url }}" id="logo" title="{{ site.title }}"
+             style="background-image: url({{ '/assets/images/logo.png' | relative_url }});"></a>
+        </div>
 
-{% include head.html %}
+        {% include navigation.html %}
+      </header>
 
-<!-- hack iOS CSS :active style -->
-<body ontouchstart="">
+      {{ content }}
 
-    {% include nav.html %}
+      <footer>
+        <p>
+          This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/deed.en_US">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
+        </p>
+      </footer>
+    </main>
 
-    {{ content }}
-
-    {% include footer.html %}
-
-
-<!-- Image to hack wechat -->
-<img src="/img/icon_wechat.png" width="0" height="0" />
-<!-- Migrate from head to bottom, no longer block render and still work -->
-
-</body>
-
+    <!-- scripts -->
+    <script src="{{ '/assets/js/fluidvids.min.js' | relative_url }}"></script>
+    <script>
+      fluidvids.init({
+        selector: ['iframe', 'object'],
+        players: ['www.youtube.com', 'player.vimeo.com']
+      });
+    </script>
+  </body>
 </html>

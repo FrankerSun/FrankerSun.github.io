@@ -1,7 +1,7 @@
+*.gem
+.bundle
+.sass-cache
 _site
-node_modules
-npm-debug.log
+Gemfile.lock
 .DS_Store
-*/.DS_Store
-*/*/.DS_Store
-*.sh
+vendor
