@@ -1,8 +1,8 @@
 # Site
-title:              Massively
+title:              ALL I DO IS WIN
 bio:                'Jekyll version of the Massively theme by HTML5UP'
-description:        "Jekyll version of the Massively theme by HTML5UP"
-locale:             en_US
+description:        "土豆君的博客"
+locale:             zh_CN
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
@@ -25,6 +25,8 @@ kramdown:
   entity_output:    as_char
   toc_levels:       1..6
   enable_coderay:   false
+
+
 mathjax:            true
 sass:
   sass_dir:         _sass
@@ -38,12 +40,12 @@ analytics-id:       "default"
 twitter:            default
 facebook:           default
 instagram:          default
-github:             default
+github:             frankersun
 
 # personal
-location:           Los Angeles, CA
-phone:              310-318-5555
-email:              info@default.com
+location:           杭州
+phone:              private
+email:              frankersun@qq.com
 
 # Gems
 gems:

@@ -1,125 +1,181 @@
 ---
 layout: null
-title: Jekyll Theme - Home Page - Massively
-description: Every great website starts with a great homepage. The homepage tells your viewers what your site is all about and gives your viewers a place to come back to.
+title: Franker Sun
+description: 土豆君的技术博客.
 sitemap:
-    priority: 1.0
-    lastmod: 2017-11-02
-    changefreq: weekly
+priority: 1.0
+lastmod: 2018-07-12
+changefreq: weekly
 ---
 <!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-  Jekyll integration by somiibo.com
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-    {% include head.html %}
-
-
+		{% include head.html %}
 	</head>
 	<body class="is-loading">
-
 		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
-
-				<!-- Intro -->
-					<div id="intro">
-            <h1>{{site.title}}</h1>
-						<h2>The Jekyll Theme Version</h2>
-						<p>Massively is an HTML5 website theme designed by <a href="https://twitter.com/ajlkn">@ajlkn</a> for <a href="https://html5up.net">HTML5 UP</a><br />
-						and released for free under the <a href="https://html5up.net/license">Creative Commons license</a>. Jekyll integration by <a href="https://somiibo.com">Somiibo</a></p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
-
-				<!-- Header -->
-					<header id="header">
-						<a href="{{ "/" | absolute_url }}" class="logo">{{site.title}}</a>
-					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-
-            {% include nav.html %}
-
-						<ul class="icons">
-              <li><a href="https://twitter.com/{{site.twitter}}" class="icon fa-twitter" rel="nofollow"><span class="label">Twitter</span></a></li>
-              <li><a href="https://facebook.com/{{site.facebook}}" class="icon fa-facebook" rel="nofollow"><span class="label">Facebook</span></a></li>
-              <li><a href="https://instagram.com/{{site.instagram}}" class="icon fa-instagram" rel="nofollow"><span class="label">Instagram</span></a></li>
-              <li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="#">Massively is a versatile Jekyll theme</a></h2>
-									<p>With only a few edits, you can have a stunningly beautiful website <br />
-                    nearly out of the box. Of course... you can always take it further <br />
-                    and make it something even more amazing!</p>
-								</header>
-								<a href="#" class="image main"><img src="{{ "/images/pic01.jpg" | absolute_url }}" alt="" /></a>
-                <p>Regardless of your website's function, the homepage is what brings the user in.
-                  If it's anything short of intriguing, captivating, or just plain cool, you're out of luck and you might deter some visitors.</p>
-                <p>Your homepage must clearly describe what your site is about.
-									Having engaging content will in this manner enable you to offer and it will make your customers more inclined to purchase from you. Content is a way to position your organization in the correct place for your clients to discover you.
-								</p>
-								<p>
-									In this manner, content in itself is a standout amongst the best promoting apparatuses in your whole advertising toolbox! Rather than making your content around your promoting technique, it's limitlessly more productive to fabricate your showcasing around your content.
-								 </p>
-
-							</article>
-
-						<!-- Posts -->
-							<section class="posts">
-                {% for post in site.posts limit:3 %}
-                {% assign mod3 = forloop.index | modulo: 3 %}
-  								<article>
-  									<header>
-  										<span class="date">{{ post.date | date_to_string }}</span>
-  										<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
-  									</header>
-  									<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
-  									<p>{{ post.excerpt }}</p>
-  									<ul class="actions">
-  										<li><a href="{{ post.url | absolute_url }}" class="button">Full Story</a></li>
-  									</ul>
-  								</article>
-                  {% if mod3 == 0 %}
-                  <article>
-  									<header>
-  										<h2><a href="#">Sponsored</a></h2>
-  									</header>
-
-  								</article>
-                  {% endif %}
-                {% endfor %}
-
-							</section>
-
-						<!-- Footer -->
-							<footer>
-                <ul class="actions">
-                  <li><a href="{{ "/blog/" | absolute_url }}" class="button">Our Blog</a></li>
-                </ul>
-							</footer>
-
-					</div>
-
-				<!-- Footer -->
-        {% include foot.html %}
-
+		<div id="wrapper" class="fade-in">
+			<!-- Intro -->
+			<div id="intro">
+				<h1>{{site.title}}</h1>
+				<h2>怕什么真理无穷</h2>
+				<h2>进一步有进一步的欢喜</h2>
+				<p></p>
+				<ul class="actions">
+					<li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
+				</ul>
 			</div>
-
+			<!-- Header -->
+			<header id="header">
+				<a class="logo">{{site.title}}</a>
+			</header>
+			<!-- Nav -->
+			<nav id="nav">
+				{% include nav.html %}
+				<ul class="icons">
+					<li><a href="https://github.com/{{site.github}}" class="icon fa-github" rel="nofollow"><span class="label">GitHub</span></a></li>
+				</ul>
+			</nav>
+			<!-- Main -->
+			<div id="main">
+				<!-- Featured Post -->
+				<article class="post featured">
+					<header class="major">
+						<h3><a>Franker Sun</a></h3>
+						<p>一只爱折腾的快乐程序猿</p>
+					</header>
+					<a class="image main"><img src="{{ "/images/index01.jpg" | absolute_url }}" alt="" /></a>
+					<h5>代码的坏味道</h5>
+					<p>
+						1. Duplicated Code：重复代码
+						指不同的地方出现相同的程序结构。
+						重构方法：Extract Method、Extract Class、Pull Up Method、Form Template Method
+					</p>
+					<p>
+						2. Long Method：过长函数
+						重构方法：Extract Method、Replace Temp with Query、Replace Method with Method Object、Decompose Conditional
+					</p>
+					<p>
+						3. Large Class：过大的类
+						重构方法：Extract Class、Extract Subclass、Extract Interface、Replace Data Value with Object
+					</p>
+					<p>
+						4. Long Parameter List：过长参数列表
+						重构方法：Replace Parameter with Method、Introduce Parameter Object、Preserve Whole Object
+					</p>
+					<p>
+						5. Divergent Change：发散式变化
+						一个类经常由于不同的原因向不同的方向变化。实际上是违法了单一职责原则。
+						重构方法：Extract Class
+					</p>
+					<p>
+						6. Shotgun Surgery：霰弹式修改
+						一种变化会导致好几个类的修改。
+						重构方法：Move Method、Move Field、Inline Class
+					</p>
+					<p>
+						7. Feature Envy：依恋情结
+						类中的方法对另一个类的访问超过了对所在类的访问。
+						重构方法：Move Method、Move Field、Extract Method
+					</p>
+					<p>
+						8. Data Clumps：数据泥团
+						指喜欢经常成群出现的多个数据项，如两个类中相同的字段，或者许多方法中相同的参数签名。
+						重构方法：Extract Class、Introduce Parameter Object、Preserve Whole Object
+					</p>
+					<p>9. Primitive Obsession：基本类型偏执
+						热衷于使用int,long,String等基本类型而不是有意义的小对象。
+						重构方法：Replace Parameter with Method、Extract Class、Introduce Parameter Object、Replace Array with Object、Replace Type Code with Class、Replace Type Code with Subclass、Replace Type Code with State/Strategy
+					</p>
+					<p>10. Switch Statement：Switch语句
+						相同的Switch语句散落在各处，需要添加一个case时需要修改多个地方。
+						重构方法：Replace Conditional With Polymorphic、Replace Type Code with Subclass、Replace Type Code with State/Strategy、Replace Parameter with Explicit Methods、Introduce Null Object
+					</p>
+					<p>11. Parallel Inheritance Hierarchies：平行继承体系
+						如果一个类增加一个子类，另一个类也必须相应的增加一个子类。
+						重构方法：Move Method、Move Field
+					</p>
+					<p>12. Lazy Class：冗余类
+						无用的类
+						重构方法：Inline Class、Collapse Hierarchy
+					</p>
+					<p>13. Speculative Generality：夸夸其谈未来性能
+						指无用的抽象类，无用的预留参数等当前没有用到的部件。这个往往是过度设计的结果。
+						重构方法：Collapse Hierarchy、Inline Class、Remove Parameter、Rename Method
+					</p>
+					<p>14. Temporary Field：令人迷惑的临时字段
+						指仅在特定环境下使用的实例变量，比如为了方便某个方法调用而在对象中添加的字段，该字段仅在这个方法中有用。
+						重构方法：Extract Class、Introduce Null Object
+					</p>
+					<p>15. Message Chains：过度耦合的消息链
+						指客户向一个对象索取另一个对象，然后在向后者索求另一个对象，然后在索求另一个对象——客户与查找过程的紧密耦合。
+						重构方法：Hide Delegate
+					</p>
+					<p>16. Middle Man：中间人
+						过度委托，一个类中的大部分方法都委托给其他类。
+						重构方法：Remove Middle Man、Inline Method、Replace Delegation with Inheritance
+					</p>
+					<p>17. Inappropriate Intimacy：狎昵关系
+						两个类大量探究彼此的private部分。
+						重构方法：Move Method、Move Field、Change Bindirectional Association to Unidirectional、Replace Inheritance with Delegation、Hide Delegate
+					</p>
+					<p>18. Alternative Classes with Different Interface：异曲同工的类
+						类名不同但功能相似。
+						重构方法：Rename Method、Move Method
+					</p>
+					<p>19. Incomplete Library Class：不完善的类库
+						指现有的功能不能满足要求。
+						重构方法：Introduce Foreign Method、Introduce Local Extension
+					</p>
+					<p>20. Data Class：纯稚的数据类
+						指只有公共成员变量，或只有字段和get/set方法的类。
+						重构方法：Move Method、Encapsulate Field、Encapsulate Collection
+					</p>
+					<p>21. Refused Bequest：被拒绝的遗赠
+						指子类只使用了父类的部分方法。
+						重构方法：Replace Inheritance with Delegation
+					</p>
+					<p>22. Comments：过多的注释
+						过多的垃圾注释，或者代码太复杂，必须使用注释说明。
+						重构方法：Extract Method、Introduce Assertion
+					</p>
+				</article>
+				<!-- Posts -->
+				<section class="posts">
+					{% for post in site.posts limit:3 %}
+						{% assign mod3 = forloop.index | modulo: 3 %}
+						<article>
+							<header>
+								<span class="date">{{ post.date | date: "%Y年%m月%d日" }}</span>
+								<h2><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h2>
+							</header>
+							<a href="{{ post.url | absolute_url }}" class="image fit"><img src="{{ post.image | absolute_url }}" alt="" /></a>
+							<p>{{ post.excerpt }}</p>
+							<ul class="actions">
+								<li><a href="{{ post.url | absolute_url }}" class="button">查看全文</a></li>
+							</ul>
+						</article>
+						{% if mod3 == 0 %}
+							<article>
+								<header>
+									<h2><a href="#">占个位</a></h2>
+								</header>
+							</article>
+						{% endif %}
+					{% endfor %}
+				</section>
+				<!-- Footer -->
+				<footer>
+					<ul class="actions">
+						<li><a href="{{ "/blog/" | absolute_url }}" class="button icon fa fa-hand-o-right">去看我的博客</a></li>
+					</ul>
+				</footer>
+			</div>
+			<!-- Footer -->
+			<!-- {% include foot.html %} -->
+		</div>
 		<!-- Scripts -->
 		{% include scripts-main.html %}
-    {% include tracking.html %}
-
+		{% include tracking.html %}
 	</body>
 </html>

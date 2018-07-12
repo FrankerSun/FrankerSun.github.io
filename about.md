@@ -1,27 +1,37 @@
 ---
-layout: page
-title: Jekyll Theme - About - Massively
-description: When building a website it's helpful to see what the focus of your site is. This page is an example of how to show a website's focus.
+layout: about
+title: 关于土豆君的博客
+description: 博客简介
 sitemap:
     priority: 0.7
-    lastmod: 2017-11-02
+    lastmod: 2018-07-11
     changefreq: weekly
 ---
-## About our Site
 
-<span class="image left"><img src="{{ "/images/pic04.jpg" | absolute_url }}" alt="" /></span>
+## 关于博客
 
-Making steady content and conveying it well takes a great deal of research and, hence, time and exertion. Building a profound established comprehension of your target customer needs is critical as your principle objective ought to be to fulfill their requirements as awesome content. You should need to enhance their lives. Having significant content like this may not be simple by any methods. Be that as it may, in any case, it's a fundamental apparatus in the event that you expect to grow a fruitful and supportable business in the present web focused world.
+### 缘起
 
-Receiving the benefits of content is a certain something. Be that as it may, it's so substantially less demanding once you begin conveying all the more successfully. The profitable content thought isn't just about bragging your item's capacities and general worth or your organization's achievements. You should concentrate less on advertising how awesome your item is and rather concentrate on indicating how valuable it is. This is a client focused approach as it concentrates on their issues and your answer for them. Making yourself fundamental is critical.
 
-### Content is Imortant
-<div class="box">
-  <p>
-  In saying that, a one-measure fits-all approach won't do the trick with regards to content promoting. Rather, an emphasis on making remarkable, high caliber and totally genuine content that is engaging, helpful and fascinating for customers will get you the crown. From content, video and symbolism to infographics, studies, online courses and podcasts, whatever your favored content medium is, guarantee it is shareable and pertinent to your industry.
-  </p>
+```
+幽沉谢世事，俯默窥唐虞。上下观古今，起伏千万途。
+遇欣或自笑，感戚亦以吁。缥帙各舒散，前后互相逾。
+瘴痾扰灵府，日与往昔殊。临文乍了了，彻卷兀若无。
+竟夕谁与言，但与竹素俱。倦极便倒卧，熟寐乃一苏。
+欠伸展肢体，吟咏心自愉。得意适其适，非愿为世儒。
+道尽即闭口，萧散捐囚拘。巧者为我拙，智者为我愚。
+书史足自悦，安用勤与劬。贵尔六尺躯，勿为名所驱。
+```
+
+
+
+
+### 时光轴
+<div id="timedd">
+  <div id="teamnewslist">
+       <ol>
+           <li><b>2018年07月10日</b>正式开通博客</li>
+           <li><b>2018年07月11日</b>修改Jekyll主题</li>
+       </ol>
+   </div>
 </div>
-
-<span class="image left"><img src="{{ "/images/pic05.jpg" | absolute_url }}" alt="" /></span>
-
-On social media, we may share our own thoughts and advance our image notwithstanding spreading musings for different associations and affiliations. With such a critical number of associations with people and relationship on social media, our experience can be over-burden with a considerable measure of information.
