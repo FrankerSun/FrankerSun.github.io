@@ -4542,3 +4542,8 @@
 	div .need-min-length{
 		min-height: 706px;
 	}
+
+	div .h2-font-size{
+		font-size: 33px; 
+		colot : #18bfef;
+	}
